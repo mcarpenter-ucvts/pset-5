@@ -6,7 +6,7 @@ public class Exercise8 {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a temperature: ");
         String initial = input.nextLine();
-        char numbers[] = new char[initial.length()];
+        char[] numbers = new char[initial.length()];
         initial = initial.toUpperCase();
         String scale = "none";
         input.close();
@@ -28,7 +28,7 @@ public class Exercise8 {
 
         String values = Arrays.toString(numbers).replace(",","").replace("[", "").replace("]", "").replace(" ", "").trim();
 
-        if (values.matches(".*\\d.*") == true) {
+        if (values.matches(".*\\d.*")) {
             temperature =  Double.parseDouble(values);
         }
         else {

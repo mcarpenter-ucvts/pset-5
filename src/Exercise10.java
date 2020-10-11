@@ -7,8 +7,8 @@ public class Exercise10 {
         double wage = input.nextDouble();
         System.out.print("Enter hours worked: ");
         double hours = input.nextDouble();
-        double pay = 0;
-        double overtime = 0;
+        double pay;
+        double overtime;
         input.close();
 
         if (wage < 0 || hours < 0) {

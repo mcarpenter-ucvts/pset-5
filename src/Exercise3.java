@@ -20,14 +20,8 @@ public class Exercise3 {
         else if (third >= second && third >= first) {
             System.out.println("Increasing.");
         }
-        else if (third == second && third == first) {
-            System.out.println("Same.");
-        }
-        else if (first >= second && first >= third) {
+        else if (first >= second) {
             System.out.println("Decreasing.");
-        }
-        else if (first > second && first > third) {
-            System.out.println("Strictly Decreasing.");
         }
         else {
             System.out.println("Unordered.");
